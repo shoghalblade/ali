@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ali-moghtadaie.pages.dev/sitemap.xml
