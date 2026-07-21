@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Readex Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Baloo Bhaijaan 2", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {

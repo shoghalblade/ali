@@ -110,11 +110,11 @@ export default function App() {
                       <GraduationCap size={32} />
                    </div>
                    <div>
-                      <h3 className="text-2xl font-semibold mb-2">دانشگاه شهید بهشتی</h3>
-                      <span className="inline-block px-3 py-1 rounded-full bg-neutral-800 font-mono text-xs text-neutral-300 mb-3">
+                      <h3 className="text-3xl font-semibold mb-3">دانشگاه شهید بهشتی</h3>
+                      <span className="inline-block px-3 py-1 rounded-full bg-neutral-800 font-mono text-sm text-neutral-300 mb-4">
                         ورودی ۱۳۸۵
                       </span>
-                      <p className="text-neutral-400 text-sm leading-relaxed">
+                      <p className="text-neutral-400 text-base leading-relaxed">
                          آغاز مسیر پزشکی در یکی از معتبرترین دانشگاه‌های علوم پزشکی ایران، جایی که پایه‌های دانش و تعهد حرفه‌ای من شکل گرفت.
                       </p>
                    </div>
@@ -141,8 +141,8 @@ export default function App() {
                         <item.icon size={28} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg mb-1 text-neutral-200">{item.title}</h4>
-                        <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">{item.desc}</p>
+                        <h4 className="font-bold text-xl mb-2 text-neutral-200">{item.title}</h4>
+                        <p className="text-sm font-medium text-neutral-400">{item.desc}</p>
                       </div>
                    </motion.div>
                 ))}
@@ -162,25 +162,41 @@ export default function App() {
                 <h2 className="text-4xl md:text-6xl font-black mb-4 tracking-tighter">گالری تصاویر</h2>
                 <div className="h-1 w-20 bg-emerald-500 rounded-full mx-auto"></div>
              </div>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <motion.div
-                   whileHover={{ scale: 1.02 }}
-                   className="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto"
-                >
-                   <img src="/profile.jpg" alt="دکتر علی مقتدایی" className="w-full h-full object-cover  transition-all duration-700" />
-                </motion.div>
-                <motion.div
-                   whileHover={{ scale: 1.05 }}
-                   className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto md:h-64"
-                >
-                   <img src="/clinic.png" alt="کلینیک" className="w-full h-full object-cover  transition-all duration-500" />
-                </motion.div>
-                <motion.div
-                   whileHover={{ scale: 1.05 }}
-                   className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto md:h-64"
-                >
-                   <img src="/equipment.png" alt="تجهیزات پزشکی" className="w-full h-full object-cover  transition-all duration-500" />
-                </motion.div>
+             <div className="flex flex-col gap-6">
+                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <motion.div
+                       whileHover={{ scale: 1.02 }}
+                       className="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto"
+                    >
+                       <img src="/profile.jpg" alt="دکتر علی مقتدایی" className="w-full h-full object-cover  transition-all duration-700" />
+                    </motion.div>
+                    <motion.div
+                       whileHover={{ scale: 1.05 }}
+                       className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto md:h-64"
+                    >
+                       <img src="/clinic.png" alt="کلینیک" className="w-full h-full object-cover  transition-all duration-500" />
+                    </motion.div>
+                    <motion.div
+                       whileHover={{ scale: 1.05 }}
+                       className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative aspect-square md:aspect-auto md:h-64"
+                    >
+                       <img src="/equipment.png" alt="تجهیزات پزشکی" className="w-full h-full object-cover  transition-all duration-500" />
+                    </motion.div>
+                 </div>
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <motion.div
+                        whileHover={{ scale: 1.02 }}
+                        className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative"
+                     >
+                        <img src="/africa.jpg" alt="خدمات داوطلبانه در آفریقا" className="w-full h-auto object-contain transition-all duration-700" />
+                     </motion.div>
+                     <motion.div
+                        whileHover={{ scale: 1.02 }}
+                        className="rounded-3xl overflow-hidden border border-neutral-800/50 bg-neutral-900/30 relative"
+                     >
+                        <img src="/uni.jpg" alt="فارغ التحصیلی" className="w-full h-auto object-contain transition-all duration-700" />
+                     </motion.div>
+                 </div>
              </div>
           </motion.div>
        </section>
@@ -207,11 +223,11 @@ export default function App() {
                   <motion.a
                      whileHover={{ scale: 1.05 }}
                      whileTap={{ scale: 0.95 }}
-                     href="tel:09158721779"
+                     href="tel:09158727119"
                      className="flex items-center justify-center gap-3 p-5 rounded-2xl bg-neutral-800/50 border border-neutral-700 hover:bg-neutral-800 transition-colors"
                   >
                      <Phone className="text-emerald-400" size={24} />
-                     <span className="font-mono text-sm tracking-wider text-neutral-200" dir="ltr">0915 872 1779</span>
+                     <span className="font-mono text-sm tracking-wider text-neutral-200" dir="ltr">0915 872 7119</span>
                   </motion.a>
                </div>
              </div>
